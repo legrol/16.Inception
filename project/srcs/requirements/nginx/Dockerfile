@@ -32,3 +32,4 @@ EXPOSE 443
 
 # CMD to be executed when docker-compose, to run nginx without daemon "mode"
 CMD ["nginx", "-g", "daemon off;"]
+

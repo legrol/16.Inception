@@ -40,9 +40,9 @@ GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';
 FLUSH PRIVILEGES;
 EOF
 
-# Run the SQL script to set up the database
+	# Run the SQL script to set up the database
 
-  /usr/bin/mysqld --user=mysql --bootstrap < /tmp/create_db.sql
+	/usr/bin/mysqld --user=mysql --bootstrap < /tmp/create_db.sql
   if [ $? -ne 0 ]; then
     echo "Error: Failed to create database and user."
     exit 1

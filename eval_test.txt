@@ -1,0 +1,28 @@
+# Point ONE
+# remove all Docker containers, images, volumes, and networks. 
+
+docker stop $(docker ps -qa);
+docker rm $(docker ps -qa);
+docker rmi -f $(docker images -qa);
+docker volume rm $(docker volume ls -q);
+docker network rm $(docker network ls -q) 2>/dev/null
+
+# Point THIRTY
+# NGINX service must be the sole entry point into your infrastructure
+docker ps --format 'table {{.Names}}\t{{.Ports}}'
+
+# Point THIRTY-THREE
+# Ensure that WordPress website is properly installed
+
+docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"
+docker-compose down --volumes
+docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"
+docker-compose up -d --build
+docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"
+docker exec -it wordpress wp user list --allow-root
+
+# Point THIRTY-NINE
+# PERSISTENCE
+docker exec -it wordpress wp user list --allow-root
+docker exec -it wordpress wp comment list --allow-root
+docker exec -it mariadb mysql -u root -p
