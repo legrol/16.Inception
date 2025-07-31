@@ -24,45 +24,33 @@
 └── README.md                 # Este documento
 ```
 
+## ![Uso](https://img.shields.io/badge/Uso-blue?style=for-the-badge)
+# Remove all Docker containers, images, volumes, and networks. 
 
+  -  `docker stop $(docker ps -qa);`
+  -  `docker rm $(docker ps -qa);`
+  -  `docker rmi -f $(docker images -qa);`
+  -  `docker volume rm $(docker volume ls -q);`
+  -  `docker network rm $(docker network ls -q) 2>/dev/null`
 
+# NGINX service must be the sole entry point into your infrastructure
 
-1. Clona el repositorio y entra en la carpeta:
-```bash
-git clone https://github.com/tu_usuario/16.Inception.git
-cd 16.Inception-main
-```
-2. Genera certificados SSL (útil para HTTPS):
-```bash
-bash srcs/tools/mkcert.sh
-```
-3. Levanta todos los servicios:
-```bash
-docker-compose up -d --build
-```
+  -  `docker ps --format 'table {{.Names}}\t{{.Ports}}'`
 
+# Ensure that WordPress website is properly installed
 
-  -  nginx (HTTPS) → https://localhost
+  -  `docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"`
+  -  `docker-compose down --volumes`
+  -  `docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"`
+  -  `docker-compose up -d --build`
+  -  `docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"`
+  -  `docker exec -it wordpress wp user list --allow-root`
 
-  -  WordPress → https://localhost:5050
+# PERSISTENCE
 
-  -  phpMyAdmin → https://localhost:5000
-
-  -  Grafana → https://localhost:3000
-
-  -  InfluxDB → https://localhost:8086
-
-  -  FTPS → ftp://localhost:21 (user: user, pass: passwd)
-
-Para parar y destruir contenedores, redes y volúmenes:
-```bash
-docker-compose down -v
-```
-
-
-
-
-
+  -  `docker exec -it wordpress wp user list --allow-root`
+  -  `docker exec -it wordpress wp comment list --allow-root`
+  -  `docker exec -it mariadb mysql -u root -p`
 
 ![Autor](https://img.shields.io/badge/Autor-red?style=for-the-badge)
 
