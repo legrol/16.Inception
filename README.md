@@ -1,7 +1,7 @@
 ![Descripción](https://img.shields.io/badge/Descripción-blue?style=for-the-badge)
 
 - Proyecto **Inception** de 42: despliegue de un stack completo de servicios en contenedores Docker.  
-- Incluye: **nginx**, **MySQL**, **WordPress**, **phpMyAdmin**, **Grafana**, **InfluxDB**, **Telegraf** y **FTPS**.  
+- Incluye: **nginx**, **Mariadb**, **WordPress**.  
 - Orquestado con **Docker Compose** y configurado para producción mínima (volúmenes, redes, certificados SSL).
 
 ---
@@ -14,21 +14,8 @@
 │   ├── nginx/
 │   │   ├── default.conf      # Configuración de servidor
 │   │   └── Dockerfile
-│   ├── mysql/
-│   │   ├── my.cnf            # Configuración de base de datos
-│   │   └── Dockerfile
 │   ├── wordpress/
 │   │   ├── wp-config.php     # Configuración WordPress
-│   │   └── Dockerfile
-│   ├── phpmyadmin/
-│   │   └── Dockerfile
-│   ├── grafana/
-│   │   └── Dockerfile
-│   ├── influxdb/
-│   │   └── influxdb.conf
-│   ├── telegraf/
-│   │   └── telegraf.conf
-│   ├── ftps/
 │   │   └── Dockerfile
 │   └── tools/                # Scripts y utilidades (certificados, setup)
 │       ├── mkcert.sh
