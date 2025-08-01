@@ -24,8 +24,8 @@
 └── README.md                 # Este documento
 ```
 
-## ![Uso](https://img.shields.io/badge/Uso-blue?style=for-the-badge)
-# Remove all Docker containers, images, volumes, and networks. 
+![Uso](https://img.shields.io/badge/Uso-blue?style=for-the-badge)
+### Remove all Docker containers, images, volumes, and networks. 
 
   -  `docker stop $(docker ps -qa);`
   -  `docker rm $(docker ps -qa);`
@@ -33,11 +33,11 @@
   -  `docker volume rm $(docker volume ls -q);`
   -  `docker network rm $(docker network ls -q) 2>/dev/null`
 
-# NGINX service must be the sole entry point into your infrastructure
+### NGINX service must be the sole entry point into your infrastructure
 
   -  `docker ps --format 'table {{.Names}}\t{{.Ports}}'`
 
-# Ensure that WordPress website is properly installed
+### Ensure that WordPress website is properly installed
 
   -  `docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"`
   -  `docker-compose down --volumes`
@@ -46,7 +46,7 @@
   -  `docker exec -it wordpress wp core is-installed --allow-root && echo "WP is installed" || echo "WP is NOT installed"`
   -  `docker exec -it wordpress wp user list --allow-root`
 
-# PERSISTENCE
+### PERSISTENCE
 
   -  `docker exec -it wordpress wp user list --allow-root`
   -  `docker exec -it wordpress wp comment list --allow-root`
@@ -55,14 +55,10 @@
 ![Vista del proyecto](https://img.shields.io/badge/Vista_del_proyecto-magenta?style=for-the-badge)
 
 <p align="center">        
-  <img src="imgReadme/Img1.png" alt="Vista del proyecto" width="650"/>
+  <img src="imgReadme/img1.png" alt="Vista del proyecto" width="650"/>
 </p>
 <p align="center">        
-  <img src="imgReadme/Img5.png" alt="Vista del proyecto" width="650"/>
-</p>
-<p align="center">
-  <img src="imgReadme/Img4.png" alt="Vista del proyecto" width="400"/>
-  <img src="imgReadme/Img3.png" alt="Vista del proyecto" width="400"/>
+  <img src="imgReadme/img5.png" alt="Vista del proyecto" width="650"/>
 </p>
 
 ![Autor](https://img.shields.io/badge/Autor-red?style=for-the-badge)
