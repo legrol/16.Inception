@@ -58,7 +58,7 @@
   <img src="imgReadme/img1.png" alt="Vista del proyecto" width="650"/>
 </p>
 <p align="center">        
-  <img src="imgReadme/img5.png" alt="Vista del proyecto" width="650"/>
+  <img src="imgReadme/img2.png" alt="Vista del proyecto" width="650"/>
 </p>
 
 ![Autor](https://img.shields.io/badge/Autor-red?style=for-the-badge)
