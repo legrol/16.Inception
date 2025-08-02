@@ -68,7 +68,7 @@ The system will prompt us to set the password of the superuser (root). I assign 
 
 Next, we will be asked to name an ordinary user somehow. I enter my nickname in the intro:
 
-![user name](imgs/imgxx.png)
+![user name](imgs/img13.png)
 
 I accept the same name as the account name and enter a simple password.
 
@@ -76,33 +76,33 @@ I accept the same name as the account name and enter a simple password.
 
 Choose your time zone.
 
-![time zone](imgs/imgxx.png)
+![time zone](imgs/img14.png)
 
 ### 3.5 Disk Layout
 
 Next, the markup program will start. We don't have to go into the details of the linux file system, so we choose ``use entire disk`` to use the entire disk.
 
-![disk layout](imgs/imgxx.png)
+![disk layout](imgs/img15.png)
 
 We select the only virtual disk available to us:
 
-![disk layout](imgs/imgxx.png)
+![disk layout](imgs/img16.png)
 
 Choose to store all files in one partition.:
 
-![disk layout](imgs/imgxx.png)
+![disk layout](imgs/img17.png)
 
 And we give the command to complete the markup and write the changes to disk.:
 
-![disk layout](imgs/imgxx.png)
+![disk layout](imgs/img18.png)
 
 We confirm the seriousness of our intentions:
 
-![disk layout](imgs/imgxx.png)
+![disk layout](imgs/img19.png)
 
 ### 3.6 Installing the base system
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img20.png)
 
 After the markup, the installation of the base system will start. Next, I will describe only those steps that are important to us, the rest of the steps can be skipped by pressing `enter`
 
