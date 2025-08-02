@@ -36,7 +36,7 @@
     * NGINX must be the sole entry point (port 443 only)
     * Domain name must be login.42.fr (replace "login" with your actual login)
 
-![Estructura del proyecto](https://img.shields.io/badge/Estructura-orange?style=for-the-badge)
+![Project structure](https://img.shields.io/badge/Project_Structure-orange?style=for-the-badge)
 
 ```text
 16.Inception-main/
@@ -64,7 +64,39 @@
 └── README.md                 # Este documento
 ```
 
-![Uso](https://img.shields.io/badge/Uso-blue?style=for-the-badge)
+![Instructions and Notes](https://img.shields.io/badge/Instructions_and_Notes-orange?style=for-the-badge)
+
+### Instructions
+
+    Prerequisites:
+
+       Virtual Machine   
+       Docker and Docker Compose installed   
+       
+    Configuration:   
+    
+       Update the .env file with your specific variables   
+       Place all secrets in the secrets directory   
+       Configure your domain name (login.42.fr) to point to your local IP
+   
+    Building and Running:
+   
+       Run make at the root directory to build and start all containers   
+       The Makefile will use docker-compose.yml to build and run the containers
+
+    Access:
+    
+       Access your WordPress site via HTTPS at https://login.42.fr
+
+### Important Notes
+
+    Do not use network: host or --link
+    Do not use infinite loop commands (tail -f, bash, sleep infinity, etc.)
+    The latest tag is prohibited
+    All containers must be properly daemonized
+    Follow Docker best practices for PID 1
+
+![Use](https://img.shields.io/badge/Use-blue?style=for-the-badge)
 ### Remove all Docker containers, images, volumes, and networks. 
 
   -  `docker stop $(docker ps -qa);`
@@ -92,16 +124,16 @@
   -  `docker exec -it wordpress wp comment list --allow-root`
   -  `docker exec -it mariadb mysql -u root -p`
 
-![Vista del proyecto](https://img.shields.io/badge/Vista_del_proyecto-magenta?style=for-the-badge)
+![Project View](https://img.shields.io/badge/Project_View-magenta?style=for-the-badge)
 
 <p align="center">        
-  <img src="imgReadme/img1.png" alt="Vista del proyecto" width="650"/>
+  <img src="imgReadme/img1.png" alt="Project View" width="650"/>
 </p>
 <p align="center">        
-  <img src="imgReadme/img2.png" alt="Vista del proyecto" width="650"/>
+  <img src="imgReadme/img2.png" alt="Project View" width="650"/>
 </p>
 
-![Autor](https://img.shields.io/badge/Autor-red?style=for-the-badge)
+![Author](https://img.shields.io/badge/Author-red?style=for-the-badge)
 
 - Roberto del Olmo Lima
 - [![GitHub](https://img.shields.io/badge/GitHub-Profile-informational?style=for-the-badge&logo=github&logoColor=white&color=181717)](https://github.com/legrol)
