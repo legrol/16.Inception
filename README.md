@@ -25,17 +25,17 @@
 
    - Must be completed on a Virtual Machine
 
-    - All configuration files must be placed in a srcs folder
+   - All configuration files must be placed in a srcs folder
 
-    - Must include a Makefile at the root to build the entire application
+   - Must include a Makefile at the root to build the entire application
 
-    - Containers must be built from either Alpine or Debian (penultimate stable version)
+   - Containers must be built from either Alpine or Debian (penultimate stable version)
 
-    - Each service must have its own Dockerfile
+   - Each service must have its own Dockerfile
 
-    - Forbidden to use pre-made images (except Alpine/Debian base images)
+   - Forbidden to use pre-made images (except Alpine/Debian base images)
 
-    - Containers must restart automatically on crash
+   - Containers must restart automatically on crash
 
 ## Security Requirements
 
