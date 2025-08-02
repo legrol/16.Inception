@@ -156,7 +156,7 @@ server {
 
 > (!) Remember to replace <your_username> for your actual 42intra login
 
-> Later, on [guide 11](https://github.com/pgomez-r/inception/tree/main/guide/10_LINK_SERVICES.md "Link Services"), we will provide a final version of this configuration file, for now we should not worry much about it as long as the server itself works with our simple html file.
+> Later, on [guide 11](https://github.com/legrol/16.Inception/blob/main/guide/11_Link_Services.md "Link Services"), we will provide a final version of this configuration file, for now we should not worry much about it as long as the server itself works with our simple html file.
 
 ## Step 3. Creating the docker-compose configuration
 
