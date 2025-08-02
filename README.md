@@ -12,9 +12,7 @@
 ## Infrastructure Components
 
     * NGINX container with TLSv1.2 or TLSv1.3 only
-
     * WordPress + PHP-FPM container (without NGINX)
-
     - MariaDB container (without NGINX)
 
     - Two volumes: - One for WordPress database - One for WordPress website files
