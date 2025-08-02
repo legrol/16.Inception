@@ -16,9 +16,9 @@ Go to https://www.debian.org and download the ISO image for the OS.
 
 Create a virtual machine. We call our project something (I just called it 'inception') and set the correct system configuration. If the project is being done on a 42 School device, its folder should be placed in sgoinfre:
 
-![virtualbox setup](media/install_debian/install_step_1.png )
+![virtualbox setup](imgs/img1.png)
 
-![virtualbox setup](media/install_debian/install_step_1-1.png )
+![virtualbox setup](imgs/img2.png)
 
 ### 2.2 Resources setting
 
