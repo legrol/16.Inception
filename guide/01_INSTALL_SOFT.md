@@ -12,7 +12,7 @@ Probably at this point we won't even have the `sudo` package, so it will be easi
 
 Update the repositories with the `apt update` command:
 
-![software installation](media/install_soft/install_step_2.png)
+![software installation](imgs/img26.png)
 
 ### Step 3. Installing Applications
 
@@ -24,7 +24,7 @@ We will enter this command manually, since it is impossible to copy-paste into a
 
 When installing, we will see output like this:
 
-![software installation](media/install_soft/install_step_6.png)
+![software installation](imgs/img27.png)
 
 It means that we did everything right. At the end of the installation, we will see the console output again.
 
