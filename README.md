@@ -1,4 +1,4 @@
-![Descripción](https://img.shields.io/badge/Descripción-blue?style=for-the-badge)
+![Descrition](https://img.shields.io/badge/Description-blue?style=for-the-badge)
 
 - Project **Inception** of 42:  Deployment of a complete stack of services in Docker containers.
 - Includes: **nginx**, **Mariadb**, **WordPress**.  
@@ -11,9 +11,9 @@
 
 ## Infrastructure Components
 
-    - NGINX container with TLSv1.2 or TLSv1.3 only
+    * NGINX container with TLSv1.2 or TLSv1.3 only
 
-    - WordPress + PHP-FPM container (without NGINX)
+    * WordPress + PHP-FPM container (without NGINX)
 
     - MariaDB container (without NGINX)
 
