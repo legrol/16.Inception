@@ -20,7 +20,7 @@ Brief info about the stages of the project:
 - [x] Certificate Installation - [guide 05](https://github.com/legrol/16.Inception/blob/main/guide/05_INSTALL_CERTIFICATE.md "Installing the certificate")
 - [x] Creating a Makefile - [guide 06](https://github.com/legrol/16.Inception/blob/main/guide/06_MAKEFILE_CREATION.md "Creating a Makefile")
 - [x] Docker basics - [guide 07](https://github.com/legrol/16.Inception/blob/main/guide/07_DOCKER_BASICS.md "Docker basic concepts")
-- [x] NGINX service - [guide 08](https://gitmdhub.com/legrol/16.Inception/blob/main/guide/08_DOCKER_NGINX.md "nginx Deployment")
+- [x] NGINX service - [guide 08](https://github.com/legrol/16.Inception/blob/main/guide/08_DOCKER_NGINX.md "nginx Deployment")
 - [x] MariaDB service - [guide 09](https://github.com/legrol/16.Inception/blob/main/guide/09_DOCKER_MARIADB.md "mariadb Deployment")
 - [x] Wordpress service - [guide 10](https://github.com/legrol/16.Inception/blob/main/guide/10_Docker_Wordpress.md "Wordpress Deployment")
 - [x] Connect all services together - [guide 11](https://github.com/legrol/16.Inception/blob/main/guide/11_Link_Services.md "Link Services")
