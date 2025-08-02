@@ -27,18 +27,13 @@
    - Forbidden to use pre-made images (except Alpine/Debian base images)
    - Containers must restart automatically on crash
 
-## Security Requirements
+### Security Requirements
 
     - No passwords in Dockerfiles
-
     - Must use environment variables
-
     - Recommended to use .env file and Docker secrets
-
     - WordPress admin username must not contain variations of "admin"
-
     - NGINX must be the sole entry point (port 443 only)
-
     - Domain name must be login.42.fr (replace "login" with your actual login)
 
 ![Estructura del proyecto](https://img.shields.io/badge/Estructura-orange?style=for-the-badge)
