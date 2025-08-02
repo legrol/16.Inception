@@ -9,30 +9,22 @@
 
 ![Project Requirements](https://img.shields.io/badge/Project_Requirements-green?style=for-the-badge)
 
-## Infrastructure Components
+### Infrastructure Components
 
     * NGINX container with TLSv1.2 or TLSv1.3 only
     * WordPress + PHP-FPM container (without NGINX)
-    - MariaDB container (without NGINX)
+    * MariaDB container (without NGINX)
+    * Two volumes: - One for WordPress database - One for WordPress website files
+    * A Docker network to connect all containers
 
-    - Two volumes: - One for WordPress database - One for WordPress website files
-
-    - A Docker network to connect all containers
-
-## Technical Specifications
+### Technical Specifications
 
    - Must be completed on a Virtual Machine
-
    - All configuration files must be placed in a srcs folder
-
    - Must include a Makefile at the root to build the entire application
-
    - Containers must be built from either Alpine or Debian (penultimate stable version)
-
    - Each service must have its own Dockerfile
-
    - Forbidden to use pre-made images (except Alpine/Debian base images)
-
    - Containers must restart automatically on crash
 
 ## Security Requirements
