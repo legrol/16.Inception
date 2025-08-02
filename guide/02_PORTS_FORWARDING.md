@@ -14,11 +14,11 @@ We can use any port we want for the ssh communication, but remember that it has 
 
 Allow logging in under the superuser:
 
-![redocting ssh config](media/ports_forwarding/step_1.png)
+![redocting ssh config](imgs/img28.png)
 
 We disable the login with the key (generally optional, but I did) and confirm the login with the password:
 
-![ssh config editing](media/ports_forwarding/step_2.png)
+![ssh config editing](imgs/img29.png)
 
 After that, we save the configuration and restart ssh and sshd services (in general, sshd is enough, but we get into the habit of doing both to be sure):
 
@@ -27,7 +27,7 @@ service ssh restart
 service sshd restart
 ```
 
-![ssh restart](media/ports_forwarding/step_3.png)
+![ssh restart](imgs/img30.png)
 
 ## Step 2. Configuring the Firewall
 
@@ -39,7 +39,7 @@ First, we launch our firewall with the command ``ufw enable``, then we allow eac
 
 > Again, do not follow the ports in the images, they are just examples, but we need to use only 443 and the one you chose for ssh connection
 
-![opening ports](media/ports_forwarding/step_4.png)
+![opening ports](imgs/img31.png)
 
 Open ports can be viewed using the `ufw status` command
 
@@ -47,7 +47,7 @@ This completes the system settings, and you need to turn off the VM with the ``s
 
 The `shutdown` command will shut down the server in a minute, so we use `shutdown now` for instant termination.:
 
-![shutdown](media/ports_forwarding/step_5.png)
+![shutdown](imgs/img32.png)
 
 ## Step 3. Port forwarding
 
@@ -55,9 +55,9 @@ It's not enough to open ports on the guest machine, you also need to redirect tr
 
 In Virtualbox, go to *setting/network/advanced/port forwarding*, and specify the following rule HTPPS and SSH (*ignore HTTP and remember not to use ports 42 or 22 if you are in Malaga campus*):
 
-![port forwarding](media/ports_forwarding/step_6_0.png)
+![port forwarding](imgs/img33.png)
 
-![port forwarding](media/ports_forwarding/step_6.png)
+![port forwarding](imgs/img34.png)
 
 ## Step 4. Login via the terminal of the host OS
 
@@ -77,6 +77,6 @@ To log in as a regular user, we use the username we created.:
 
 Click yes to accept the settings in known_hosts, enter our password and we are in!
 
-![ssh login](media/ports_forwarding/step_7.png)
+![ssh login](imgs/img35.png)
 
 Alternatively, we could also use the extension **Remote - SSH** on VSCode, which login process from command palette is quite similar and intuitive. You could just launch the VM, go to VSCode in you host machine (your everyday laptop or 42 machine) and connect to the the VM with this extension. That way, you will have access to the whole VM directories and files, you can add, delete, edit... use the editor terminal, and most important, do all the work in VSCode ^_^
