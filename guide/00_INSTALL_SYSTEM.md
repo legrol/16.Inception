@@ -112,24 +112,24 @@ We just skip all the extra stuff like an additional CD image, choosing repositor
 
 We only need an ssh server, so we use a space to uncheck everything else. Later, we will install a lighter openbox as a graphical environment. We will only need it to open our website. We also don't need system utilities.
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img21.png)
 
 ### 3.6.1 Software Selection
 
 Eventually, the system will finally tell us that it wants to install the system loader on the main partition.:
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img22.png)
 
 Select a section (we have only one):
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img23.png)
 
 And the installation is completed:
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img24.png)
 
 We accept the offer to finish the installation:
 
-![system installation](imgs/imgxx.png)
+![system installation](imgs/img25.png)
 
 This is how our system is installed. Let's move on to the next guide and roll out all the software we need!
