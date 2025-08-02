@@ -4,7 +4,7 @@
 
 Let's set our MariaDB service. This is a intial folder and files structure:
 
-![mariadb setup](media/docker_mariadb/step_0.png)
+![mariadb setup](imgs/img62.png)
 
 > Note: MariaDB vs. MySQL - This projects uses MariaDB as required by subject, but you will see mysql in commands, paths, and configs (like mysqld, /var/lib/mysql, and mysql_install_db). This is normal, MariaDB is a drop-in replacement for MySQL, designed to work with the same commands and file structures. For all practical purposes in this guide, "MySQL" and "MariaDB" refer to the same database system.
 

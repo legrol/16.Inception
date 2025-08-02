@@ -24,15 +24,15 @@ A snapshot is like a photograph of the system status; it's like saving in a vide
 
 Go to virtualbox and go to the "snapshots" menu.
 
-![snapshot menu](media/saving_snapshots/step_0.png)
+![snapshot menu](imgs/img36.png)
 
 From above, click on the green plus sign with the inscription "make" and describe our changes.
 
-![Creating snapshots](media/saving_snapshots/step_1.png)
+![Creating snapshots](imgs/img37.png)
 
 This way we get a snapshot of our current changes.:
 
-![Creating snapshots](media/saving_snapshots/step_2.png)
+![Creating snapshots](imgs/img38.png)
 
 If something goes wrong, it will not be necessary to delete and redo the configuration, you can simply roll back to the previous working configuration.
 
@@ -40,19 +40,19 @@ If something goes wrong, it will not be necessary to delete and redo the configu
 
 Go to the folder on goinfre where our configuration is stored. If we look at the file sizes, we will find that the disk .A vhd weighs more than 2 gigabytes (in my case, almost three gigs), and most modern cloud storage does not support files larger than two gigabytes.
 
-![configuration search](media/configuration_storage/step_0.png)
+![configuration search](imgs/img39.png)
 
 ## Step 3. Compress large files
 
 There is a way out! ~~It is necessary to compress the file through the input .vhd and folders. Now our disk weighs 950 megabytes instead of 3 gigabytes!
 
-![file compression](media/configuration_storage/step_1.png)
+![file compression](imgs/img40.png)
 
-![file compression](media/configuration_storage/step_2.png)
+![file compression](imgs/img41.png)
 
 ## Step 4. Upload files to the cloud
 
-![cloud storage](media/configuration_storage/step_3.png)
+![cloud storage](imgs/img42.png)
 
 This configuration weighs only 1.38 GB with snapshots. Now it can be downloaded and deployed on any school mac and even on a home PC.
 
@@ -64,22 +64,22 @@ For the subsequent transfer, you will need to make a new snapshot after all the 
 
 If we log in to another computer, we regret to find that there is nothing from goinfree on it, and our configuration is missing.:
 
-![cloud storage](media/configuration_storage/step_4.png)
+![cloud storage](imgs/img43.png)
 
 To save files, we will most likely have to slightly change the browser settings.:
 
-![cloud storage](media/configuration_storage/step_5.png)
+![cloud storage](imgs/img44.png)
 
 We download our configuration from the cloud to goinfree and create a folder that is named the same as the folder of our previous configuration at the previous location:
 
-![cloud storage](media/configuration_storage/step_6.png)
+![cloud storage](imgs/img45.png)
 
 Let's unzip all our archives and get the following:
 
-![cloud storage](media/configuration_storage/step_7.png)
+![cloud storage](imgs/img46.png)
 
 Go to virtualbox and see that our configuration is working.:
 
-![cloud storage](media/configuration_storage/step_8.png)
+![cloud storage](imgs/img47.png)
 
 And for deployment on a home PC/On the laptop, we will need to download and unzip the configuration, and then in the virtualbox "Tools" tab, click on the green "Add" icon, specifying the folder with the Debian file.vbox and other files.

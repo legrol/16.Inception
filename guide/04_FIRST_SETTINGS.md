@@ -18,9 +18,9 @@ In order for our user to make such requests in the system, we edit the /etc/sudo
 
 Our task is to add an entry with our user name and rights equivalent to root rights.:
 
-![Docker Configuration](media/setting_docker/step_5.png)
+![Docker Configuration](imgs/img48.png)
 
-![Docker Configuration](media/setting_docker/step_6.png)
+![Docker Configuration](imgs/img49.png)
 
 Save the changes and close the file.
 
@@ -32,7 +32,7 @@ This is what our user's group list looks like now.:
 
  ```groups <your_nickname>```
 
-![Setting up Docker](media/setting_docker/step_0.png)
+![Setting up Docker](imgs/img50.png)
 
 Let's add our user to the group with the command 
 
@@ -42,7 +42,7 @@ And check that the addition has occurred.:
 
 ```groups <your_nickname>```
 
-![Setting up Docker](media/setting_docker/step_1.png)
+![Setting up Docker](imgs/img51.png)
 
 As we can see, the docker group has been added to the list of groups at the very end. This means that now we can call our docker from under a regular user
 
@@ -112,7 +112,7 @@ echo ".env" >> project/srcs/requirements/wordpress/.dockerignore
 To execute the script, it must be given permission:
 `chmod +x make_directories.sh `
 
-![Setting up Docker](media/setting_docker/step_7.png)
+![Setting up Docker](imgs/img52.png)
 
 After that, you can run it.:
 

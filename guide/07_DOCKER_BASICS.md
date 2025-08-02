@@ -4,7 +4,7 @@ So we took a snapshot, saved the configuration to the cloud or to a USB stick, a
 
 First, let's get some knowledge of the technologies that we will use in our containers. The following scheme is given in our assignment:
 
-![nginx configuration](media/nginx_deploy/step_1.png)
+![nginx configuration](imgs/img56.png)
 
 Let's see what kind of software we need to implement what is shown in the diagram.:
 
@@ -33,11 +33,11 @@ A docker image is a set of environments required to run certain software. It dif
 
 Thus, the container weighs significantly less than an entire emulated system. Let's see this clearly. Let's see how much our OS weighs when installed.:
 
-![nginx configuration](media/nginx_deploy/step_2.png)
+![nginx configuration](imgs/img57.png)
 
 And let's compare this with the same image of the eleventh debian on DockerHub - the official Docker image repository:
 
-![nginx configuration](media/nginx_deploy/step_3.png)
+![nginx configuration](imgs/img58.png)
 
 The image weighs only 50 MB in compressed form and, after unpacking, this image will weigh about 150 MB. That's such a significant difference.
 
@@ -55,7 +55,7 @@ As josesanc wisely put it on his guide, we can understand Docker basis and how i
 
 - *Docker Container* → Like the game running on your console. It’s the actual, playable instance of the game (image), isolated in its own environment.
 
-![Docker as videogame](media/setting_docker/docker_analogy_1.png)
+![Docker as videogame](imgs/img59.png)
 
 ### Software Program Analogy
 
@@ -65,7 +65,7 @@ As josesanc wisely put it on his guide, we can understand Docker basis and how i
 
 - *Docker Container* → Like running the .exe. It’s the live, isolated process executing your program (image) on your system.
 
-![Docker as C program](media/setting_docker/docker_analogy_2.png)
+![Docker as C program](imgs/img60.png)
 
 Having understood this, let’s apply the concepts to our porject logic process. Here’s how the workflow would be for setting each service:
 

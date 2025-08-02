@@ -12,7 +12,7 @@ Open the /etc/hosts file:
 
 And add to the ``localhost`` our login.42.fr in my case it is ``pgomez-r.42.fr ``:
 
-![certificate installation](media/install_certificate/step_1.png)
+![certificate installation](imgs/img53.png)
 
 ## Step 2. Installing and setting the certificate
 
@@ -48,7 +48,7 @@ We check that everything is working by requesting the mkcert version.:
 
 We will see something like:
 
-![certificate installation](media/install_certificate/step_0.png)
+![certificate installation](imgs/img54.png)
 
 ### Getting the certificate
 
@@ -60,7 +60,7 @@ To generate a certificate, we use our mkcert; we will use or intra user name as 
 
 `mkcert <your_nickname>.42.fr`
 
-![certificate installation](media/install_certificate/step_3.png)
+![certificate installation](imgs/img55.png)
 
 As you can see, our certificate has been valid for more than two years, and that's a good thing.
 

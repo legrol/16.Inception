@@ -273,7 +273,7 @@ Now, try to open in browser:
 
 And now, if we access the localhost from the browser, we get a working configuration.:
 
-![nginx worker](media/install_certificate/step_10.png)
+![nginx worker](imgs/img61.png)
 
 By easily replacing several docker-compose values and uncomenting the configuration file, we will get a working nginx that supports TLS and works with wordpress. But that is going to happen next.
 
