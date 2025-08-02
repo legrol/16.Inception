@@ -1,10 +1,55 @@
 ![Descripción](https://img.shields.io/badge/Descripción-blue?style=for-the-badge)
 
-- Proyecto **Inception** de 42: despliegue de un stack completo de servicios en contenedores Docker.  
-- Incluye: **nginx**, **Mariadb**, **WordPress**.  
-- Orquestado con **Docker Compose** y configurado para producción mínima (volúmenes, redes, certificados SSL).
+- Project **Inception** of 42:  Deployment of a complete stack of services in Docker containers.
+- Includes: **nginx**, **Mariadb**, **WordPress**.  
+- Orchestrated with **Docker Compose** and configured for minimal production (volumes, networks, SSL certificates).
+- The goal is to set up a small infrastructure with multiple services using Docker containers, following specific rules and best practices.
 
 ---
+
+![Project Requirements](https://img.shields.io/badge/Project_Requirements-green?style=for-the-badge)
+
+## Infrastructure Components
+
+    - NGINX container with TLSv1.2 or TLSv1.3 only
+
+    - WordPress + PHP-FPM container (without NGINX)
+
+    - MariaDB container (without NGINX)
+
+    - Two volumes: - One for WordPress database - One for WordPress website files
+
+    - A Docker network to connect all containers
+
+## Technical Specifications
+
+   - Must be completed on a Virtual Machine
+
+    - All configuration files must be placed in a srcs folder
+
+    - Must include a Makefile at the root to build the entire application
+
+    - Containers must be built from either Alpine or Debian (penultimate stable version)
+
+    - Each service must have its own Dockerfile
+
+    - Forbidden to use pre-made images (except Alpine/Debian base images)
+
+    - Containers must restart automatically on crash
+
+## Security Requirements
+
+    - No passwords in Dockerfiles
+
+    - Must use environment variables
+
+    - Recommended to use .env file and Docker secrets
+
+    - WordPress admin username must not contain variations of "admin"
+
+    - NGINX must be the sole entry point (port 443 only)
+
+    - Domain name must be login.42.fr (replace "login" with your actual login)
 
 ![Estructura del proyecto](https://img.shields.io/badge/Estructura-orange?style=for-the-badge)
 
