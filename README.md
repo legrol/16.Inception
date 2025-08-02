@@ -16,17 +16,17 @@
 │   ├── srcs/
 |   | ├── requirements
 │   |    ├── mariadb/
-│   |    │   ├── conf            # Configuración de BBDD
+│   |    │   ├── conf         # Configuración de BBDD
 │   |    │   ├── tools           
 │   |    │   └── Dockerfile
 │   |    ├── nginx/
-│   |    │   ├── conf            # Configuración de servidor
+│   |    │   ├── conf         # Configuración de servidor
 │   |    │   └── Dockerfile
 │   |    ├── wordpress/
-│   |    │   ├── conf            # Configuración WordPress
+│   |    │   ├── conf         # Configuración WordPress
 │   |    │   ├── tools           
 │   |    │   └── Dockerfile
-│   |    └── tools/              # Scripts y utilidades (certificados, setup)
+│   |    └── tools/           # Scripts y utilidades (certificados, setup)
 |   ├── .env
 |   └── docker-compose.yml
 ├── eval_test.txt
