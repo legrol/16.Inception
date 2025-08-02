@@ -10,17 +10,27 @@
 
 ```text
 16.Inception-main/
-├── srcs/
-│   ├── nginx/
-│   │   ├── default.conf      # Configuración de servidor
-│   │   └── Dockerfile
-│   ├── wordpress/
-│   │   ├── wp-config.php     # Configuración WordPress
-│   │   └── Dockerfile
-│   └── tools/                # Scripts y utilidades (certificados, setup)
-│       ├── mkcert.sh
-│       └── cleanup.sh
-├── docker-compose.yml
+├── imgReadme/
+├── imgs/
+├── project/
+│   ├── srcs/
+|   | ├── requirements
+│   |    ├── mariadb/
+│   |    │   ├── conf            # Configuración de BBDD
+│   |    │   ├── tools           
+│   |    │   └── Dockerfile
+│   |    ├── nginx/
+│   |    │   ├── conf            # Configuración de servidor
+│   |    │   └── Dockerfile
+│   |    ├── wordpress/
+│   |    │   ├── conf            # Configuración WordPress
+│   |    │   ├── tools           
+│   |    │   └── Dockerfile
+│   |    └── tools/              # Scripts y utilidades (certificados, setup)
+|   ├── .env
+|   └── docker-compose.yml
+├── eval_test.txt
+├── make_directories.sh
 └── README.md                 # Este documento
 ```
 
